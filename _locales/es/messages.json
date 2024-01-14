@@ -1,0 +1,9 @@
+{
+  "extensionName": {
+    "message": "Control de Velocidad para Viki"
+  },
+  "extensionDescription": {
+    "message": "Ajusta la velocidad de reproducción de los videos en Viki.com"
+  }
+  // Asegúrate de que no hay comas adicionales después del último elemento y de eliminar los comentarios.
+}

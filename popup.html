@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Viki Speed Control</title>
+  <style>
+    body {
+      width: 200px;
+      padding: 20px;
+      text-align: center;
+      background-color: #222;
+      font-family: 'Arial', sans-serif;
+    }
+
+    h3 {
+      color: #4cd964;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #005baa;
+    }
+
+    #speedDisplay {
+      font-size: 20px;
+      margin: 10px 0;
+      color: #4cd964;
+    }
+
+    input[type="number"] {
+      width: 90%;
+      padding: 10px;
+      border: 1px solid #4cd964;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: #222;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h3>Ajustar Velocidad</h3>
+  <p>Velocidad Actual: <span id="speedDisplay">1.0x</span></p>
+  <input type="number" id="customSpeed" placeholder="Ingresa Velocidad Personalizada" min="0.1" max="3.0" step="0.1">
+  <button id="setCustomSpeed">Establecer Velocidad</button>
+  <button id="increaseSpeed">Acelerar +</button>
+  <button id="decreaseSpeed">Ralentizar -</button>
+  <button id="resetSpeed">Restablecer</button>
+
+
+  <script src="popup.js"></script>
+</body>
+</html>
